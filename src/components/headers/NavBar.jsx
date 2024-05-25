@@ -3,8 +3,7 @@ import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import { ThemeProvider, THEME_ID, createTheme } from "@mui/material/styles";
 import { Switch } from "@mui/material";
 import { motion } from "framer-motion";
-
-import photoURL from "../../assets/home/girl.jpg";
+import logo from '../../assets/home/navi-toolkit.png'
 
 import { FaBars } from "react-icons/fa";
 
@@ -110,12 +109,7 @@ const NavBar = () => {
             className="flex-shrink-0 cursor-pointer pl-7 md:p-0 flex items-center"
           >
             <div>
-              <h1 className="text-2xl inline-flex gap-3 items-center font-bold">
-                N I S E A <img src="/yoga-logo.png" alt="" className="w-8 h-8" />
-              </h1>
-              <p className="font-bold text-[13px]">
-                한국정보보호교육진흥원
-              </p>
+              <img src={logo} alt="" className="w-30 h-20" />
             </div>
           </div>
 
@@ -134,29 +128,6 @@ const NavBar = () => {
           <div className="hidden md:block text-black dark:text-white">
             <div className="flex">
               <ul className="ml-10 flex items-center space-x-4 pr-4">
-                {navLinks.map((link) => (
-                  <li key={link.route}>
-                    <NavLink
-                      to={link.route}
-                      style={{ whiteSpace: "nowrap" }}
-                      className={({ isActive }) =>
-                        `font-bold ${
-                          isActive
-                            ? "text-secondary"
-                            : `${
-                                navBg.includes("bg-transparent")
-                                  ? "text-white"
-                                  : "text-black dark:text-white"
-                              }`
-                        } hover:text-secondary duration-300`
-                      }
-                    >
-                      {" "}
-                      {link.name}
-                    </NavLink>
-                  </li>
-                ))}
-
                 {/* based on users */}
                 {user ? null : isLogin ? (
                   <li>
@@ -178,39 +149,8 @@ const NavBar = () => {
                         } hover:text-secondary duration-30`
                       }
                     >
-                      Login
+                      로그인
                     </NavLink>
-                  </li>
-                )}
-
-                {user && (
-                  <li>
-                    <NavLink
-                      to="/dashboard"
-                      className={({ isActive }) =>
-                        `font-bold ${
-                          isActive
-                            ? "text-secondary"
-                            : `${
-                                navBg.includes("bg-transparent")
-                                  ? "text-white"
-                                  : "text-black dark:text-white"
-                              }`
-                        } hover:text-secondary duration-300`
-                      }
-                    >
-                      Dashboard
-                    </NavLink>
-                  </li>
-                )}
-
-                {user && (
-                  <li>
-                    <img
-                      src={photoURL}
-                      alt=""
-                      className="h-[40px] rounded-full w-[40px]"
-                    />
                   </li>
                 )}
 
@@ -222,20 +162,10 @@ const NavBar = () => {
                         "font-bold px-3 py-2 bg-secondary text-white rounded-xl"
                       }
                     >
-                      Logout
+                      로그아웃
                     </NavLink>
                   </li>
                 )}
-
-                {/* color toggle */}
-                <li>
-                  <ThemeProvider theme={theme}>
-                    <div className="flex flex-col justify-center items-center">
-                      <Switch onChange={() => setIsDarkMode(!isDarkMode)} />
-                      <h1 className="text-[8px]">Light/Dark</h1>
-                    </div>
-                  </ThemeProvider>
-                </li>
               </ul>
             </div>
           </div>
