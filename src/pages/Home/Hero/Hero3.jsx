@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import bgImg from "../../../assets/home/banner-2.jpg";
-import Modal2 from "./Modal2";
+import bgImg from "../../../assets/home/banner-3.jpg";
+import Modal3 from "./Modal3";
 import qrCode from "../../../assets/home/navitoolkit-qrcode.jpg";
 
-const Hero2 = () => {
-  const [open21, setOpen21] = useState(false);
-  const [open22, setOpen22] = useState(false);
-  const [open23, setOpen23] = useState(false);
-  const [open24, setOpen24] = useState(false);
-  const [open25, setOpen25] = useState(false);
-  const [open26, setOpen26] = useState(false);
-  const [open27, setOpen27] = useState(false);
-  const [open28, setOpen28] = useState(false);
-  const [open29, setOpen29] = useState(false);
-  const [open2A, setOpen2A] = useState(false);
-  const [open2B, setOpen2B] = useState(false);
-  const [open2C, setOpen2C] = useState(false);
+const Hero3 = () => {
+  const [open31, setOpen31] = useState(false);
+  const [open32, setOpen32] = useState(false);
+  const [open33, setOpen33] = useState(false);
+  const [open34, setOpen34] = useState(false);
+  const [open35, setOpen35] = useState(false);
+  const [open36, setOpen36] = useState(false);
+  const [open37, setOpen37] = useState(false);
+  const [open38, setOpen38] = useState(false);
+  const [open39, setOpen39] = useState(false);
+  const [open3A, setOpen3A] = useState(false);
+  const [open3B, setOpen3B] = useState(false);
+  const [open3C, setOpen3C] = useState(false);
 
   return (
     <div
@@ -27,12 +27,12 @@ const Hero2 = () => {
           <div className="flex justify-center items-center gap-10 bg-opacity-10">
             <button
               className="px-7 py-7 rounded-lg bg-red-600 font-bold uppercase"
-              onClick={() => setOpen21(true)}
+              onClick={() => setOpen31(true)}
             >
               버튼
             </button>
 
-            <Modal2 open={open21} onClose={() => setOpen21(false)}>
+            <Modal3 open={open31} onClose={() => setOpen31(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -44,21 +44,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen21(false)}
+                    onClick={() => setOpen31(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-pink-500 font-bold uppercase"
-              onClick={() => setOpen22(true)}
+              onClick={() => setOpen32(true)}
             >
               버튼
             </button>
-            <Modal2 open={open22} onClose={() => setOpen22(false)}>
+            <Modal3 open={open32} onClose={() => setOpen32(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -70,21 +70,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen22(false)}
+                    onClick={() => setOpen32(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-orange-500 font-bold uppercase"
-              onClick={() => setOpen23(true)}
+              onClick={() => setOpen33(true)}
             >
               버튼
             </button>
-            <Modal2 open={open23} onClose={() => setOpen23(false)}>
+            <Modal3 open={open33} onClose={() => setOpen33(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -96,21 +96,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen23(false)}
+                    onClick={() => setOpen33(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-orange-300 font-bold uppercase"
-              onClick={() => setOpen24(true)}
+              onClick={() => setOpen34(true)}
             >
               버튼
             </button>
-            <Modal2 open={open24} onClose={() => setOpen24(false)}>
+            <Modal3 open={open34} onClose={() => setOpen34(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -122,21 +122,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen24(false)}
+                    onClick={() => setOpen34(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-yellow-500 font-bold uppercase"
-              onClick={() => setOpen25(true)}
+              onClick={() => setOpen35(true)}
             >
               버튼
             </button>
-            <Modal2 open={open25} onClose={() => setOpen25(false)}>
+            <Modal3 open={open35} onClose={() => setOpen35(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -148,21 +148,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen25(false)}
+                    onClick={() => setOpen35(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-green-400 font-bold uppercase"
-              onClick={() => setOpen26(true)}
+              onClick={() => setOpen36(true)}
             >
               버튼
             </button>
-            <Modal2 open={open26} onClose={() => setOpen26(false)}>
+            <Modal3 open={open36} onClose={() => setOpen36(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -174,23 +174,23 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen26(false)}
+                    onClick={() => setOpen36(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
           </div>
 
           <div className="flex justify-center py-10 items-center gap-10 bg-opacity-10">
             <button
               className="px-7 py-7 rounded-lg bg-green-500 font-bold uppercase"
-              onClick={() => setOpen27(true)}
+              onClick={() => setOpen37(true)}
             >
               버튼
             </button>
-            <Modal2 open={open27} onClose={() => setOpen27(false)}>
+            <Modal3 open={open37} onClose={() => setOpen37(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -202,21 +202,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen27(false)}
+                    onClick={() => setOpen37(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-sky-400 font-bold uppercase"
-              onClick={() => setOpen28(true)}
+              onClick={() => setOpen38(true)}
             >
               버튼
             </button>
-            <Modal2 open={open28} onClose={() => setOpen28(false)}>
+            <Modal3 open={open38} onClose={() => setOpen38(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -228,21 +228,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen28(false)}
+                    onClick={() => setOpen38(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-blue-600 font-bold uppercase"
-              onClick={() => setOpen29(true)}
+              onClick={() => setOpen39(true)}
             >
               버튼
             </button>
-            <Modal2 open={open29} onClose={() => setOpen29(false)}>
+            <Modal3 open={open39} onClose={() => setOpen39(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -254,21 +254,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen29(false)}
+                    onClick={() => setOpen39(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-purple-500 font-bold uppercase"
-              onClick={() => setOpen2A(true)}
+              onClick={() => setOpen3A(true)}
             >
               버튼
             </button>
-            <Modal2 open={open2A} onClose={() => setOpen2A(false)}>
+            <Modal3 open={open3A} onClose={() => setOpen3A(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -280,21 +280,21 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen2A(false)}
+                    onClick={() => setOpen3A(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-gray-900 font-bold uppercase"
-              onClick={() => setOpen2B(true)}
+              onClick={() => setOpen3B(true)}
             >
               오픈카톡 접속
             </button>
-            <Modal2 open={open2B} onClose={() => setOpen2B(false)}>
+            <Modal3 open={open3B} onClose={() => setOpen3B(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -322,15 +322,15 @@ const Hero2 = () => {
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
 
             <button
               className="px-7 py-7 rounded-lg bg-amber-700 font-bold uppercase"
-              onClick={() => setOpen2C(true)}
+              onClick={() => setOpen3C(true)}
             >
               ChatGPT 대화
             </button>
-            <Modal2 open={open2C} onClose={() => setOpen2C(false)}>
+            <Modal3 open={open3C} onClose={() => setOpen3C(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
                   <h3 className="text-lg font-black text-gray-500">
@@ -342,13 +342,13 @@ const Hero2 = () => {
                   <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
-                    onClick={() => setOpen2C(false)}
+                    onClick={() => setOpen3C(false)}
                   >
                     Cancel
                   </button>
                 </div>
               </div>
-            </Modal2>
+            </Modal3>
           </div>
         </div>
       </div>
@@ -356,4 +356,4 @@ const Hero2 = () => {
   );
 };
 
-export default Hero2;
+export default Hero3;
