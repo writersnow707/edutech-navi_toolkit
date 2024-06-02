@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import bgImg from "../../../assets/home/banner-1.jpg";
 import Modal from "./Modal";
 import qrCode from "../../../assets/home/navitoolkit-qrcode.jpg";
+import YoutubeURL from "./YoutubeURL/YoutubeURL";
+import Canvas from "./Canvas/Canvas";
 
 const Hero = () => {
   const [open11, setOpen11] = useState(false);
@@ -26,28 +28,18 @@ const Hero = () => {
         <div>
           <div className="flex justify-center items-center gap-10 bg-opacity-10">
             <button
-              className="px-7 py-7 rounded-lg bg-red-600 font-bold uppercase"
+              className="px-7 py-7 rounded-lg bg-red-600 font-bold"
               onClick={() => setOpen11(true)}
             >
-              버튼
+              유튜브
             </button>
-
             <Modal open={open11} onClose={() => setOpen11(false)}>
-              <div className="text-center w-56">
-                <div className="mx-auto my-4 w-48">
+              <div className="text-center">
+                <div className="mx-auto">
                   <h3 className="text-lg font-black text-gray-500">
-                    모달 테스트 1
+                    유튜브 실행 테스트
                   </h3>
-                  <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
-                </div>
-                <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
-                  <button
-                    className="btn btn-light w-full"
-                    onClick={() => setOpen11(false)}
-                  >
-                    Cancel
-                  </button>
+                  <YoutubeURL />
                 </div>
               </div>
             </Modal>
@@ -56,30 +48,21 @@ const Hero = () => {
               className="px-7 py-7 rounded-lg bg-pink-500 font-bold uppercase"
               onClick={() => setOpen12(true)}
             >
-              버튼
+              판서
             </button>
             <Modal open={open12} onClose={() => setOpen12(false)}>
-              <div className="text-center w-56">
-                <div className="mx-auto my-4 w-48">
+              <div className="text-center">
+                <div className="mx-auto">
                   <h3 className="text-lg font-black text-gray-500">
-                    모달 테스트 2
+                    판서
                   </h3>
-                  <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
-                </div>
-                <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
-                  <button
-                    className="btn btn-light w-full"
-                    onClick={() => setOpen12(false)}
-                  >
-                    Cancel
-                  </button>
+                  <Canvas />
                 </div>
               </div>
             </Modal>
 
             <button
-              className="px-7 py-7 rounded-lg bg-orange-500 font-bold uppercase"
+              className="px-7 py-7 rounded-lg bg-orange-500 font-bold"
               onClick={() => setOpen13(true)}
             >
               버튼
@@ -93,12 +76,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen13(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -119,12 +101,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen14(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -145,12 +126,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen15(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -171,12 +151,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen16(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -199,12 +178,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen17(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -225,12 +203,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen18(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -251,12 +228,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen19(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -277,12 +253,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">테스트 페이지입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen1A(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -297,7 +272,7 @@ const Hero = () => {
             <Modal open={open1B} onClose={() => setOpen1B(false)}>
               <div className="text-center w-56">
                 <div className="mx-auto my-4 w-48">
-                  <h3 className="text-lg font-black text-gray-500">
+                  <h3 className="text-lg font-black text-gray-800">
                     오픈카톡 QR코드
                   </h3>
                   <a
@@ -305,16 +280,19 @@ const Hero = () => {
                     target="_blank"
                     className="text-sm text-blue-500"
                   >
-                    해당 링크를 클릭하시거나,</a><p className="text-sm text-gray-500">아래 QR코드를 스캔해주세요.</p>
+                    해당 링크를 클릭하시거나,
+                  </a>
+                  <p className="text-sm text-gray-500">
+                    아래 QR코드를 스캔해주세요.
+                  </p>
                   <img src={qrCode} />
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen1B(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>
@@ -335,12 +313,11 @@ const Hero = () => {
                   <p className="text-sm text-gray-500">추가 예정입니다.</p>
                 </div>
                 <div className="flex gap-4">
-                  <button className="btn btn-danger w-full">Delete</button>
                   <button
                     className="btn btn-light w-full"
                     onClick={() => setOpen1C(false)}
                   >
-                    Cancel
+                    확인
                   </button>
                 </div>
               </div>

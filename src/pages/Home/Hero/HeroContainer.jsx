@@ -3,8 +3,6 @@ import "swiper/css";
 import "swiper/css/effect-creative";
 // import { EffectCreative } from "swiper";
 import Hero from "./Hero";
-import Hero2 from "./Hero2";
-import Hero3 from "./Hero3";
 
 const HeroContainer = () => {
   return (
@@ -32,12 +30,6 @@ const HeroContainer = () => {
       >
         <SwiperSlide>
           <Hero />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Hero2 />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Hero3 />
         </SwiperSlide>
       </Swiper>
     </section>

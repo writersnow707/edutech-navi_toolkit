@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  color: #000000;
+  background-color: rgb(201, 174, 174);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+input{
+  width: 80%;
+  padding: 15px;
+  transform: translate(0%, 0%);
+}
+
+button {
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #0000ff;
+  border-color: #0000ff;
+}
+button:focus {
+  border-color: #000;
+  outline: none;
+  box-shadow: none;
+}
